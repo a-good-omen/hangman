@@ -1,3 +1,4 @@
+#The hangman parts so i can easily use it in my program
      ______
     |	|
     |
