@@ -11,7 +11,7 @@ def authenticity():
 		if pwd!=x:
 			print("Access DENIED!!")
 		else:
-			print("Access GRANTED") 
+			input("Access GRANTED") 
 			break
 	else:
 		print("UNAUTHORIZED!")
@@ -22,7 +22,7 @@ def password_changer():
 		global x
 		authenticity()
 		x=input("Enter new password: ")
-		print("Password changed!")	
+		input("Password changed!")	
 	    		
 	    			    			    			    			    		
 def call():
