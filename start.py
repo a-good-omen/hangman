@@ -5,7 +5,7 @@ user=input("""\t\t----HANGMAN!!----
                    \t          Press ENTER to start!""")
 
 if user=='admin':
-    ...
+	admin.call()
 
 word=helper.wordpicker()
 display='_'*len(word)
@@ -29,7 +29,7 @@ while True:
             display=helper.display_changer(display)
         else:
             chance-=1
-            print(f"\nSorry Incorrect :( ({{chance} chances left}!)")
+            print(f"\nSorry Incorrect :( ({chance} chances left!)")
             
     else:
         break
