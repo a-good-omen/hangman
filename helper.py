@@ -2,7 +2,7 @@ import random
 
 
 def wordpicker():
-    wordfile=open("words.txt")
+    wordfile=open("wordfile.txt")
     wordlist=[wrd.rstrip() for wrd in wordfile]
 
     word=random.choice(wordlist)
