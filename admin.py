@@ -1,6 +1,6 @@
 import sys
 
-wordfile=open("words.txt",'a+')
+wordfile=open("wordfile.txt",'a+')
 x="*****"
 
 
