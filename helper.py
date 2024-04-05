@@ -21,3 +21,12 @@ def display_changer(curr_display,status,guess):
 			status.remove((index,letter))
 			break
 	return ''.join(curr_display),status
+	
+	
+def checker(guess,status):
+	for i,j in status:
+		if j==guess:
+			return True
+	else:
+		return False
+	
