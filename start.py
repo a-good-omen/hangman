@@ -11,7 +11,7 @@ word=helper.wordpicker()
 display='_'*len(word)
 hangman=helper.parts()
 chance=7
-already_guessed=set()
+progress=list(enumerate(word))
 
 while True:
     if chance:
@@ -19,11 +19,11 @@ while True:
         for curr_hang in hangman_status: print(curr_hang)     
         guess=input(f"{display} \nYour Guess:")
         guess=guess.lower()
-        result=helper.checker(guess)
+        result=helper.checker(guess,progress)
 
         if result==True:
             print("\nThat's Correct!")
-            display=helper.display_changer(display)
+            display,progress=helper.display_changer(display,progress,guess)
         else:
             chance-=1
             print(f"\nSorry Incorrect :( ({chance} chances left!)")
