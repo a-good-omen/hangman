@@ -1,13 +1,13 @@
 import admin,helper
 
-user=input("""\t\t----HANGMAN!!----
+user=input("""\t\t----HANGMAN----
 
                    \t          Press ENTER to start!""")
 
 if user=='admin':
-	admin.call()
+        admin.call()
 
-word=helper.wordpicker()
+word='apple'
 display='_'*len(word)
 hangman=helper.parts()
 chance=7
@@ -27,6 +27,8 @@ while True:
         else:
             chance-=1
             print(f"\nSorry Incorrect :( ({chance} chances left!)")
-            
+
     else:
         break
+        
+print("Congrats!" if display==word else f"Sorry, you had {display.count('_')} letters more to guess")
