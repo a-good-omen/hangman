@@ -6,4 +6,8 @@ strawberry
 apple
 strong
 marathon
+program
 raddish
+electricity
+statistics
+computer
