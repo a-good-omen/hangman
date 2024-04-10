@@ -65,4 +65,4 @@ while True:
                 break
 
 for curr_hang in hangman_status: print(curr_hang,end='')        #Shows the player the man's condition at game ka end
-input(f"CONGRATS! You win! (Took you {guesscount} turns!)" if display==word else f"Sorry, you had {display.count('_')} letter(s) more to guess")
+input(f"CONGRATS! You win! (Took you {guesscount} turns!)" if display==word else f"Sorry, your word was {word} and you had {display.count('_')} letter(s) more to guess")
