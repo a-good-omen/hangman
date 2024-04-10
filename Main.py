@@ -30,10 +30,10 @@ while True:
 
 input("Loading......")
 
-word=helper.wordpicker()                        #Picks a word
+word=helper.wordpicker()                    #Picks a word
 display='_'*len(word)
 hangman=helper.parts()
-chance=7                                                 #Player gets 6 chances cause only those many parts to draw for the hangman
+chance=7                                    #Player gets 6 chances cause only those many parts to draw for the hangman
 progress=list(enumerate(word))              #A list containing the index of each word and the corresponding letter
 guesscount=0
 
